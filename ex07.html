@@ -3,67 +3,151 @@
 <head>
   <meta charset="utf-8">
   <title>JS Bin</title>
+  
   <style>
-    * {font-family : 'Malgun Gothic';
-        font-size: 13px;
-    }
+   
+    * {font-family: "Malgun Gothic"; }
     
    
+    p {font-size: 12px;}
     
-   .icon {width: 32px; height: 32px;}
-       body {
-        margin: auto;
-    
-  max-width: 470px;
-      }
-    a {text-decoration: none;
-      padding : 0 5px 0 5px;
-      color: #3b5998;
+    body { background-color:#afeeee; 
+    margin: auto;
+padding: 40px;
       
-        
+      max-width: 600px;
+    }  
+  
+  h1 { 
+    text-align: center;
+    font-family: "Adobe Gothic Std";
+    background: black;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+  }
+    
+    .name {
+        text-align: right;
     }
-    ol {list-style: none;
-      padding-left: 0px;
+    
+    h2 {color: #3cb371; text-align: right; border-left: 3px solid green; font-family: "Adobe Gothic Std";
+      margin: 30px 0 0px 0;
+   
     }
-    .A {
-      background-color: white;
-      padding: 15px;
-      border-radius: 1px;
-       box-shadow: 2px 2px 10px 1px lightgray;
-      margin: 30px 0 0 0;
-    }
-    img {width: 100%}
-    .B {background: #e9eaed;
-      padding: 10px;
-      border-radius: 5px;
-       box-shadow: 2px 2px 10px 1px lightgray;
-      margin: 1px 0 30px 0;
-    }
+    
+  body > ol > ul > li {border-left: 3px solid black;
+      list-style-type: none; padding-left: 20px;
+      }
+    
+
+    
+     .bold {font-weight: bold; font-size: 13px;}
+    
+    div {padding: 10px 0 20px 0;}
+    
+   
+    li { padding: 4px; font-size: 12px; }
+    
+    img {float: right; width: 90px;  border-radius: 1px; margin: 9px;}
+    
+    .ico { background-color: #808000; color: white; padding: 0 3px 0 3px;}
+    .gico { background-color: #32cd32; padding: 2px; font-weight: bold; }
+    
+    .pa {font-style: italic;
+      color: gray;
+      margin: 3px 0 40px 0;
+      font-size: 11px;
+      border-top: 1px solid black;
+      padding: 5px 0 0 0;}
+    
+    a {font-weight: bold;}
+    
   </style>
+  
+  
   
 </head>
 <body>
-  <div class="A">
-  <p><img class="icon" src="http://kaywonsad.appspot.com/s/art01.jpg" alt="p"><a href="#"> Noname</a></p>
-  <p>세계문자 가운데 한글, 즉 훈민정음은 흔히들 신비로운 문자라 부르곤 합니다. 그것은 세계 문자 가운데 유일하게 한글만이 그것을 만든 사람과 반포일을 알며, 글자를 만든 원리까지 알기 때문입니다.</p>
-  <p> 세계에 이런 문자는 없습니다. 그래서 한글은, 정확히 말해 [훈민정음 해례본](국보 70호)은 진즉에 유네스코 세계기록유산으로 등재되었습니다. ‘한글’이라는 이름은 1910년대 초에 주시경 선생을 비롯한 한글학자들이 쓰기 시작한 것입니다. 여기서 ‘한’이란 크다는 것을 뜻하니, 한글은 ‘큰 글’을 말한다고 하겠습니다</p>
-  <img src="http://www.bloter.net/wp-content/uploads/2014/10/daumkakao-112-765x430.jpg" alt="m">
+  <h1>중간고사</h1>
+  <p class="name">백진솔</p>
+  <h2>중첩된 목록</h2>
+  <p>목록 요소 안에 또다른 목록 요소를 중첩하여 사용할 수 있습니다.</p>
+  
 
+  <ol>
+  <li class="bold">홍길동</li>
+   
+     <ul>
+      <li>지각 없음</li>
+      <li>결석 없음</li>
+      <li>과제 만점</li>
+    </ul>
     
-    <p><a href="#">Like</a><a href="#">Comment</a><a href="#">Share</a></p>
+    <li class="bold">이몽룡</li>
+   <ul>
+      <li>지각 2회</li>
+      <li>결석 없음</li>
+      <li>과제 만점</li>
+    </ul>
+    
+  </ol>
+  
+  <div>
+  
+    <h2>이미지 넣기</h2>
+  
+    <p>이미지를 넣으려면 <span class="ico">img</span> 요소를 사용합니다. <img src="http://kaywonsad.appspot.com/s/art01.jpg" alt="1"></p>
+    <p><span class="ico">src</span> 속성에는 이미지의 경로(URL)를 적습니다.</p>
+    <p>이미지 요소는 항상 <span class="ico">alt</span> 속성을 사용하여 대체 텍스트를 명시해주어야 합니다. "alt"sms "Alternative text"의 약자로, 이미지를 표시할 수 없을 떄 이미지를 대신하여 나타낼 텍스트를 뜻합니다.</p>
   
     </div>
   
   
-     <div class="B">
-<p><a href="#"> NoName and 24 others </a>like this.</p> <hr>
-       
-       <ol>
-      <li><img class="icon" src="http://kaywonsad.appspot.com/s/art01.jpg" alt="p"><a href="#"> Noname</a> <p>세계문자 가운데 한글, 즉 훈민정음은 흔히들 신비로운 문자라 부르곤 합니다. 그것은 세계 문자 가운데 유일하게 한글만이 그것을 만든 사람과 반포일을 알며, 글자를 만든 원리까지 알기 때문입니다.</p></li>
-       <li><img class="icon" src="http://kaywonsad.appspot.com/s/art01.jpg" alt="p"><a href="#"> Noname</a> <p>세계문자 가운데 한글, 즉 훈민정음은 흔히들 신비로운 문자라 부르곤 합니다. 그것은 세계 문자 가운데 유일하게 한글만이 그것을 만든 사람과 반포일을 알며, 글자를 만든 원리까지 알기 때문입니다.</p></li>
-       <li><img class="icon" src="http://kaywonsad.appspot.com/s/art01.jpg" alt="p"><a href="#"> Noname</a> <p>세계문자 가운데 한글, 즉 훈민정음은 흔히들 신비로운 문자라 부르곤 합니다. 그것은 세계 문자 가운데 유일하게 한글만이 그것을 만든 사람과 반포일을 알며, 글자를 만든 원리까지 알기 때문입니다.</p></li>
-</ol>
+    <h2>인라인 요소 목록</h2>
+    <p>다음은 HTML에서 자주 사용되는 요소들입니다.</p>
+   <ul>
+       <li><span class="gico">a</span>: 하이퍼링크 (Anchor)</li>
+      <li><span class="gico">img</span>: 이미지 (Image)</li>
+      <li><span class="gico">span</span>: 일반용도의 인라인 (Span)</li>
+      <li><span class="gico">strong</span>: 중요 (strong)</li>
+   <li><span class="gico">em</span>: 강조 (Emphasis)</li>
+    </ul> 
+  
+  
+  
+  
+   <h2>CSS란?</h2>
+    <p>CSS는 Cascading Stylesheet의 약자이며 HTML 같은 마크업 언어로 작성된 문서를 꾸미기 위해 사용합니다. HTML 문서의 <span class="ico">head</span> 요소 안에 <span class="ico">style</span> 요소를 넣고 CSS 코드를 적으면 해당 문서를 다양하게 꾸밀 수 있습니다.</p>
+    
+   <p>CSS에 대한 더 자세한 설명은 <a href="#">CSS</a> 문서를 참고하세요.</p>
+    
+  
+  
+  
+  
+    <h2>블럭 요소 목록</h2>
+    <p>다음은 HTML에서 자주 사용되는 요소들입니다.</p>
+    <ol>
+      <li><span class="gico">p</span>: 단락 (Paragraph)</li>
+        <li><span class="gico">h1</span>: 큰제목 (Heading1)</li>
+        <li><span class="gico">ul</span>: 순서 없는 목록 (Unordered List)</li>
+        <li><span class="gico">ol</span>: 순서 있는 목록 (Ordered List)</li>
+        <li><span class="gico">table</span>: 표 (table)</li>
+        </ol>
 
-  </div>
+  
+  
+  
+  <div>
+  
+  <h2>HTML이란?</h2>
+  <p>HTML은 <span class="gico">하이퍼텍스트 마크업 언어 (Hypertext Markup Language)</span>의 약자로, 웹 페이지를 만들 때 사용되는 문서 형식입니다.</p>
+    <p>하이퍼텍스트 (Hypertext)란 하이퍼링크 (Hyperlink)를 담고 있는 문서를 뜻합니다. 하이퍼링크는 문서들이 서로 연결되어 있는 고리를 말합니다.</p>
+    </div>
+    
+
+    <p class="pa">2014년 10월 14일 중간고사, 백진솔 작성<p>
+
 </body>
 </html>
