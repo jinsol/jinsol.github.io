@@ -27,6 +27,11 @@ header {
   
   
   }
+    
+    .inline{
+      position: absolute;
+      display: inline;
+    }
   .tot {
     padding: 20px 20px 0 0;
     margin-left: -4px;
@@ -185,17 +190,25 @@ position: absolute;
       position:absolute;
       right: 13%;
     }
-    .right3 {
-      display: inline;
-
-    }
+    
     @media screen and (min-width: 600px) {
   .right3{
-          position:absolute;
-      right: 13%;
+
+right: 13%;
+  top: 3px;
+
+
+
+
   }
 
   }
+
+    .right3{
+display:inline;
+
+
+    }
   </style>
 </head>
 <body>
@@ -237,14 +250,42 @@ position: absolute;
     <li>
       <div class="left3">
         <i class="left2 fa fa-bus"></i>
-        <div class="cen left">
-          <div>
+        <div class="inline">
+
             <span class="txt">4:09 - 5:53PM</span>
+
             <div class="right3">
             <span class="txt">1</span>hr
             <span class="txt">25</span> min
               </div>
+          
+          <div>
+            <i class="fa fa-user"></i>
+             > 
+            <i class="fa fa-bus"></i>
+            <span class="bluebus">1-1</span>
+            >  
+            <i class="fa fa-bus"></i>
+            <span class="bluebus">441</span>
           </div>
+          <div class="time">4:25 PM from 계원예술대학교</div>
+          <div class="time"><i class="fa fa-user"></i> 10 min Every 10 min</div>
+        </div>
+      </div>
+    </li>
+
+  <li>
+      <div class="left3">
+        <i class="left2 fa fa-bus"></i>
+        <div class="inline">
+
+            <span class="txt">4:09 - 5:53PM</span>
+
+            <div class="right3">
+            <span class="txt">1</span>hr
+            <span class="txt">25</span> min
+              </div>
+          
           <div>
             <i class="fa fa-user"></i>
              > 
@@ -264,14 +305,15 @@ position: absolute;
     <li>
       <div class="left3">
         <i class="left2 fa fa-bus"></i>
-        <div class="cen left">
-          <div>
+        <div class="inline">
+
             <span class="txt">4:09 - 5:53PM</span>
+
             <div class="right3">
             <span class="txt">1</span>hr
             <span class="txt">25</span> min
               </div>
-          </div>
+          
           <div>
             <i class="fa fa-user"></i>
              > 
@@ -286,17 +328,20 @@ position: absolute;
         </div>
       </div>
     </li>
-        <li>
+
+
+    <li>
       <div class="left3">
         <i class="left2 fa fa-bus"></i>
-        <div class="cen left">
-          <div>
+        <div class="inline">
+
             <span class="txt">4:09 - 5:53PM</span>
+
             <div class="right3">
             <span class="txt">1</span>hr
             <span class="txt">25</span> min
               </div>
-          </div>
+          
           <div>
             <i class="fa fa-user"></i>
              > 
@@ -311,32 +356,8 @@ position: absolute;
         </div>
       </div>
     </li>
-        <li>
-      <div class="left3">
-        <i class="left2 fa fa-bus"></i>
-        <div class="cen left">
-          <div>
-            <span class="txt">4:09 - 5:53PM</span>
-            <div class="right3">
-            <span class="txt">1</span>hr
-            <span class="txt">25</span> min
-              </div>
-          </div>
-          <div>
-            <i class="fa fa-user"></i>
-             > 
-            <i class="fa fa-bus"></i>
-            <span class="bluebus">1-1</span>
-            >  
-            <i class="fa fa-bus"></i>
-            <span class="bluebus">441</span>
-          </div>
-          <div class="time">4:25 PM from 계원예술대학교</div>
-          <div class="time"><i class="fa fa-user"></i> 10 min Every 10 min</div>
-        </div>
-      </div>
-    </li>
-  </ul>
+
+</ul>
   </div>
 </body>
 </html>
