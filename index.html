@@ -5,6 +5,11 @@
   <title>길찾기::</title>
    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <style>
+    
+    * {
+     font-family : 'Malgun Gothic';
+    }
+    
 
 header {
   width: 100%;
@@ -22,8 +27,17 @@ header {
   
   
   }
-  .top i {
+  .tot {
+    padding: 20px 20px 0 0;
+    margin-left: -4px;
+  }  
+    .tot i {
+      padding: 0 30px 0 0;
+    }
+    
+      .to1 {
     padding: 20px;
+
   }  
 
 .depart {
@@ -112,18 +126,25 @@ header p {
     {padding: 4px 0 8px; 0;}
     
     .left
-    {position: absolute;
+    {
+      position: absolute;
      width: 80%;
-      left: 20%;
+left: 10%;
       display: inline-block;
       
     }
 
     .left2
     {
-
-      left:11%;
-      position: relative;
+    padding-right: 30px;
+  
+    }
+    
+    .left3
+    {
+position: absolute;
+ left: 10%;
+      width:90%;
     }
     
     .depart i 
@@ -146,136 +167,152 @@ header p {
     
     .line
     {
-
+      position: absolute;
+      padding-bottom: 3px;
       border-bottom: 1px solid #a8c7fa;;
-      line-height: 28px;
+      line-height: 24px;
       width: 67%;
+
     }
     
     .an
     {
       padding-left: 3px;
+      
+      
     }
   </style>
 </head>
 <body>
   <header>
-  <div class="top">
-    <i class="white fa fa-arrow-left"></i>
-    <div class="left">
-    <i class="nowhite fa fa-car"></i>
-    <i class="white fa fa-bus"></i>
-    <i class="nowhite fa fa-user"></i>
+    <div class="top">
+      <i class="white to1 fa fa-arrow-left"></i>
+      <div class="left tot">
+        <i class="nowhite fa fa-car"></i>
+        <i class="white fa fa-bus"></i>
+        <i class="nowhite fa fa-user"></i>
       </div>
-  </div>
-  <div class="channel">
-    <ul>
-      <li><i class="left2 white fa fa-map-marker"></i><p class="left line">계원예술대학교</p></li>
-      <li ><i class="an left2 white fa fa-ellipsis-v"></i><i class="nowhite right fa fa-arrows-v"></i></li>
-      <li><i class="left2 white fa fa-map-marker"></i><p class="left">신사동 가로수길</p></li>
-    </ul>
-  </div>
-  <div class="depart">
-    
-      <i class="left2 nowhite fa fa-bars"></i>
-    <div class="left">
-      <p>Depart at 4:09</p>
-      <p><span class="right">OPTIONS</span></p>
     </div>
-  </div>
-</header>
+    <div class="channel">
+      <div class="left3">
+      <ul>
+        
+          <li><i class="left2 white fa fa-map-marker"></i><p class="line">계원예술대학교</p></li>
+          <li ><i class="an left2 white fa fa-ellipsis-v"></i><i class="nowhite right fa fa-arrows-v"></i></li>
+          <li><i class="left2 white fa fa-map-marker"></i><p>신사동 가로수길</p></li>
+       
+      </ul>
+       </div>
+    </div>
+    <div class="depart">
+      <div class="left3">
+        <i class="left2 nowhite fa fa-bars"></i>
+        <div class="left">
+          <p>Depart at 4:09</p>
+          <p><span class="right">OPTIONS</span></p>
+        </div>
+      </div>
+    </div>
+  </header>
 
 
 
 <div class="list">
   <ul>
     <li>
-      <i class="left2 fa fa-bus"></i>
-      <div class="cen left">
-        <div>
-          <span class="txt">4:09 - 5:53PM</span>
-          <span class="txt">1</span>hr
-          <span class="txt">25</span> min
+      <div class="left3">
+        <i class="left2 fa fa-bus"></i>
+        <div class="cen left">
+          <div>
+            <span class="txt">4:09 - 5:53PM</span>
+            <span class="txt">1</span>hr
+            <span class="txt">25</span> min
+          </div>
+          <div>
+            <i class="fa fa-user"></i>
+             > 
+            <i class="fa fa-bus"></i>
+            <span class="bluebus">1-1</span>
+            >  
+            <i class="fa fa-bus"></i>
+            <span class="bluebus">441</span>
+          </div>
+          <div class="time">4:25 PM from 계원예술대학교</div>
+          <div class="time"><i class="fa fa-user"></i> 10 min Every 10 min</div>
         </div>
-        <div>
-          <i class="fa fa-user"></i>
-           > 
-          <i class="fa fa-bus"></i>
-          <span class="bluebus">1-1</span>
-          >  
-          <i class="fa fa-bus"></i>
-          <span class="bluebus">441</span>
-        </div>
-        <div class="time">4:25 PM from 계원예술대학교</div>
-        <div class="time"><i class="fa fa-user"></i> 10 min Every 10 min</div>
       </div>
     </li>
 
 
 
-    <li>
-      <i class="left2 fa fa-bus"></i>
-      <div class="cen left">
-        <div>
-          <span class="txt">4:09 - 5:53PM</span>
-          <span class="txt">1</span>hr
-          <span class="txt">25</span> min
+     <li>
+      <div class="left3">
+        <i class="left2 fa fa-bus"></i>
+        <div class="cen left">
+          <div>
+            <span class="txt">4:09 - 5:53PM</span>
+            <span class="txt">1</span>hr
+            <span class="txt">25</span> min
+          </div>
+          <div>
+            <i class="fa fa-user"></i>
+             > 
+            <i class="fa fa-bus"></i>
+            <span class="bluebus">1-1</span>
+            >  
+            <i class="fa fa-bus"></i>
+            <span class="bluebus">441</span>
+          </div>
+          <div class="time">4:25 PM from 계원예술대학교</div>
+          <div class="time"><i class="fa fa-user"></i> 10 min Every 10 min</div>
         </div>
-        <div>
-          <i class="fa fa-user"></i>
-           > 
-          <i class="fa fa-bus"></i>
-          <span class="bluebus">1-1</span>
-          >  
-          <i class="fa fa-bus"></i>
-          <span class="bluebus">441</span>
-        </div>
-        <div class="time">4:25 PM from 계원예술대학교</div>
-        <div class="time"><i class="fa fa-user"></i> 10 min Every 10 min</div>
       </div>
+    </li>
  
-    </li>
-    <li>
-      <i class="left2 fa fa-bus"></i>
-      <div class="cen left">
-        <div>
-          <span class="txt">4:09 - 5:53PM</span>
-          <span class="txt">1</span>hr
-          <span class="txt">25</span> min
+     <li>
+      <div class="left3">
+        <i class="left2 fa fa-bus"></i>
+        <div class="cen left">
+          <div>
+            <span class="txt">4:09 - 5:53PM</span>
+            <span class="txt">1</span>hr
+            <span class="txt">25</span> min
+          </div>
+          <div>
+            <i class="fa fa-user"></i>
+             > 
+            <i class="fa fa-bus"></i>
+            <span class="bluebus">1-1</span>
+            >  
+            <i class="fa fa-bus"></i>
+            <span class="bluebus">441</span>
+          </div>
+          <div class="time">4:25 PM from 계원예술대학교</div>
+          <div class="time"><i class="fa fa-user"></i> 10 min Every 10 min</div>
         </div>
-        <div>
-          <i class="fa fa-user"></i>
-           > 
-          <i class="fa fa-bus"></i>
-          <span class="bluebus">1-1</span>
-          >  
-          <i class="fa fa-bus"></i>
-          <span class="bluebus">441</span>
-        </div>
-        <div class="time">4:25 PM from 계원예술대학교</div>
-        <div class="time"><i class="fa fa-user"></i> 10 min Every 10 min</div>
       </div>
-
     </li>
-    <li>
-      <i class="left2 fa fa-bus"></i>
-      <div class="cen left">
-        <div>
-          <span class="txt">4:09 - 5:53PM</span>
-          <span class="txt">1</span>hr
-          <span class="txt">25</span> min
+        <li>
+      <div class="left3">
+        <i class="left2 fa fa-bus"></i>
+        <div class="cen left">
+          <div>
+            <span class="txt">4:09 - 5:53PM</span>
+            <span class="txt">1</span>hr
+            <span class="txt">25</span> min
+          </div>
+          <div>
+            <i class="fa fa-user"></i>
+             > 
+            <i class="fa fa-bus"></i>
+            <span class="bluebus">1-1</span>
+            >  
+            <i class="fa fa-bus"></i>
+            <span class="bluebus">441</span>
+          </div>
+          <div class="time">4:25 PM from 계원예술대학교</div>
+          <div class="time"><i class="fa fa-user"></i> 10 min Every 10 min</div>
         </div>
-        <div>
-          <i class="fa fa-user"></i>
-           > 
-          <i class="fa fa-bus"></i>
-          <span class="bluebus">1-1</span>
-          >  
-          <i class="fa fa-bus"></i>
-          <span class="bluebus">441</span>
-        </div>
-        <div class="time">4:25 PM from 계원예술대학교</div>
-        <div class="time"><i class="fa fa-user"></i> 10 min Every 10 min</div>
       </div>
     </li>
   </ul>
