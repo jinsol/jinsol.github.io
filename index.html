@@ -33,7 +33,6 @@ article div {
 	text-align: center;
 	position: relative;
 	margin: auto;
-	
 	overflow: hidden;
 
 
@@ -43,19 +42,19 @@ article div {
 
 				label {
 					cursor: pointer;
-					border-radius: 50%;
-					padding: 10px;
-					background: #ffc300;
-					width: 2px;
-					height: 2px;
+					background: rgba(0, 0, 0, 0.6);
+					opacity: 0.5;
+
+					height: 100px;
 					float: left;
-					text-align: center;
-					margin: 13px 5px 0 7px;
+
+
+
 
 				}
 
 				label:hover {
-					background: #fdc756;
+
 				}
 
 				input {
@@ -122,6 +121,8 @@ article div {
 
 img {
 
+ width: 100%;
+ height: 100%;
 }
 
 	 .imgbox1 {
@@ -190,33 +191,33 @@ img {
 
 	<div class="main">
 		<input id="one" name="transforms" type="radio" value="1">
-        <label for="one"></label>
-
 		<input id="two" name="transforms" type="radio" value="2">
-        <label for="two"></label>
-
-        <input id="three" name="transforms" type="radio" value="3">
-        <label for="three"></label>
-
+        <input id="three" name="transforms" type="radio" value="3">    
         <input id="four" name="transforms" type="radio" value="4">
-        <label for="four"></label>
-
         <input id="five" name="transforms" type="radio" value="5">
-        <label for="five"></label>
-
         <input id="six" name="transforms" type="radio" value="6">
-        <label for="six"></label>
+
 
 
 
 
 		<article>
-		    <div><img src="https://s-media-cache-ak0.pinimg.com/474x/9a/e4/10/9ae410af1be44c85c7ab3d0e4a28fb26.jpg" alt="sample1"></div>
-		    <div><img src="https://s-media-cache-ak0.pinimg.com/736x/39/e0/13/39e0133ddab071fe625f2c7c2ac0faa6.jpg" alt="sample2"></div>
-		    <div><img src="https://s-media-cache-ak0.pinimg.com/474x/67/a1/88/67a188bb9d7fddf36562d2a260277703.jpg" alt="sample3"></div>
-		    <div><img src="https://s-media-cache-ak0.pinimg.com/474x/80/1a/11/801a113de5ae20c87bcbcadf9b17a265.jpg" alt="sample4"></div>
-		    <div><img src="https://s-media-cache-ak0.pinimg.com/736x/62/22/96/6222967d060db3dafa653e2a2d76adc8.jpg" alt="sample5"></div>
-		    <div><img src="https://s-media-cache-ak0.pinimg.com/474x/ee/59/76/ee597653b62687733fb1049155e549e3.jpg" alt="sample6"></div>
+		    <div><label for="one"></label><img src="img/1.jpg" alt="sample1"></div>
+		    <div> <label for="two"></label><img src="https://s-media-cache-ak0.pinimg.com/736x/39/e0/13/39e0133ddab071fe625f2c7c2ac0faa6.jpg" alt="sample2">       </div>
+		    <div>		     <label for="three"></label><img src="https://s-media-cache-ak0.pinimg.com/474x/67/a1/88/67a188bb9d7fddf36562d2a260277703.jpg" alt="sample3">
+
+</div>
+		    <div><label for="four"></label><img src="https://s-media-cache-ak0.pinimg.com/474x/80/1a/11/801a113de5ae20c87bcbcadf9b17a265.jpg" alt="sample4">
+
+		    </div>
+		    <div>
+		    	       <label for="five"></label><img src="https://s-media-cache-ak0.pinimg.com/736x/62/22/96/6222967d060db3dafa653e2a2d76adc8.jpg" alt="sample5">
+
+		    </div>
+		          
+		    <div>  <label for="six"></label><img src="https://s-media-cache-ak0.pinimg.com/474x/ee/59/76/ee597653b62687733fb1049155e549e3.jpg" alt="sample6">
+
+		    </div>
 		</article>
 
 	</div>
