@@ -33,6 +33,7 @@ article div {
 	text-align: center;
 	position: relative;
 	margin: auto;
+	
 	overflow: hidden;
 
 
@@ -42,12 +43,12 @@ article div {
 
 				label {
 					cursor: pointer;
-					background: rgba(0, 0, 0, 0.6);
+					background-color: none;
 					opacity: 0.5;
-
+					width: 150px;
 					height: 100px;
 					float: left;
-
+					z-index: 1;
 
 
 
@@ -120,9 +121,8 @@ article div {
 }
 
 img {
+	z-index: 200;
 
- width: 100%;
- height: 100%;
 }
 
 	 .imgbox1 {
@@ -191,10 +191,19 @@ img {
 
 	<div class="main">
 		<input id="one" name="transforms" type="radio" value="1">
+        
+
 		<input id="two" name="transforms" type="radio" value="2">
-        <input id="three" name="transforms" type="radio" value="3">    
+
+
+        <input id="three" name="transforms" type="radio" value="3">
+       
         <input id="four" name="transforms" type="radio" value="4">
+        
+
         <input id="five" name="transforms" type="radio" value="5">
+ 
+
         <input id="six" name="transforms" type="radio" value="6">
 
 
@@ -202,7 +211,7 @@ img {
 
 
 		<article>
-		    <div><label for="one"></label><img src="img/1.jpg" alt="sample1"></div>
+		    <div><label for="one"></label><img src="https://s-media-cache-ak0.pinimg.com/474x/9a/e4/10/9ae410af1be44c85c7ab3d0e4a28fb26.jpg" alt="sample1"></div>
 		    <div> <label for="two"></label><img src="https://s-media-cache-ak0.pinimg.com/736x/39/e0/13/39e0133ddab071fe625f2c7c2ac0faa6.jpg" alt="sample2">       </div>
 		    <div>		     <label for="three"></label><img src="https://s-media-cache-ak0.pinimg.com/474x/67/a1/88/67a188bb9d7fddf36562d2a260277703.jpg" alt="sample3">
 
