@@ -1,189 +1,66 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Hi, This is...</title>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<style type="text/css">
-	body {
-		font: 1em Arial;
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type='application/javascript' src='/path/to/fastclick.js'></script>
+<style>
+	.one {
+		background-color: red;
+		width: 10%;
+		height: 90%;
+		position: absolute;
+		left: -200px;
+		bottom: 0;
 	}
-.main {
-	margin-left: 550px;
-}
-article {
-	width: 1000px;
-	margin-top: 20px;
-	float: left;
-	position: relative;
-	left: -350px;
-}
-article div {
-	width: 150px;
-	height: 100px;
-	background: #ccc;
-	float: left;
-	text-align: center;
-	position: relative;
-	margin: auto;
-	
-	overflow: hidden;
-}
-				label {
-					cursor: pointer;
-					border-radius: 50%;
-					padding: 10px;
-					background: #ffc300;
-					width: 2px;
-					height: 2px;
-					float: left;
-					text-align: center;
-					margin: 13px 5px 0 7px;
-				}
-				label:hover {
-					background: #fdc756;
-				}
-				input {
-					position: absolute;
-					left: -9999px;
-				}
-				input:checked ~ ol li {
-					opacity:0.3;
-					-webkit-transform: scale(0.7);
-				}
-				input:checked ~ article div {
-					-webkit-transform-origin: 0 0;
-				}
-				input[value="1"]:checked ~ article div:first-child {
-				-webkit-transform: translate(150px, 150px) scale(4.13);
-				-webkit-transition: all 0.3s ease;
-				   -webkit-filter: brightness(100%) opacity() grayscale(0);
-				}
-				input[value="2"]:checked ~ article div:nth-child(2) {
-						-webkit-transition: all 0.3s ease;
-					-webkit-transform: translate(0px, 150px) scale(4.13);
-				}
-				input[value="3"]:checked ~ article div:nth-child(3) {
-						-webkit-transition: all 0.3s ease;
-					-webkit-transform: translate(-150px, 150px) scale(4.13);
-				}
-				input[value="4"]:checked ~ article div:nth-child(4) {
-						-webkit-transition: all 0.3s ease;
-					-webkit-transform: translate(-300px, 150px) scale(4.13);
-				}
-				input[value="5"]:checked ~ article div:nth-child(5) {
-						-webkit-transition: all 0.3s ease;
-					-webkit-transform: translate(-450px, 150px) scale(4.13);
-				}
-				input[value="6"]:checked ~ article div:last-child {
-						-webkit-transition: all 0.3s ease;
-					-webkit-transform: translate(-600px, 150px) scale(4.13);
-				}
- .sidebar {
-          background-color: #ffc300;
-          width: 80px;
-          position: absolute;
-          left: -60px;
-          top: 0;
-          bottom: 0; 
-        }
-.sidebar:hover {
-	-webkit-transform: translate(60px, 0);
-	-webkit-transition: all 0.3s ease;
-}
-img {
-}
-	 .imgbox1 {
-				 
-				 	z-index: 5;
-				 	position: absolute;
-				 	top: 30px;
-				 	right: 500px;
-				 }
-				  .imgbox2 {
-				 	z-index: 4;
-				 	position: absolute;
-				 	top: 30px;
-				 	right: 350px;
-				 }
-				  .imgbox3 {
-				 	z-index: 3;
-				 	position: absolute;
-				 	top: 30px;
-				 	right: 250px;
-				 }
-				  .imgbox4 {
-				 	position: absolute;
-				 	z-index: 2;
-				 	top: 30px;
-				 	right: 150px;
-				 }
-				  .imgbox5 {
-				 	position: absolute;
-				 	z-index: 1;
-				 	top: 30px;
-				 	right: 50px;
-				 }
-			img {
-				width: 150px;
-				-webkit-filter: brightness(50%) opacity(60%) grayscale();
-				-webkit-transition: all 0.4s ease;
-			}
-			img:hover {
-			    -webkit-filter: brightness(100%) opacity() grayscale(0);
-			}
-			.title {
-				color: white;
-				font-family: Arial Black;
-				font-size: 30px;
-				position: absolute;
-				margin-top: 110px;
-				margin-left: 160px;
-			}
-	
+
+	#show, #hide  {
+		width: 10%;
+		position: absolute;
+		height: 10%;
+		left: 0;
+		top: 0;
+		cursor: pointer;
+
+	}
+	#hide {
+		display: none;
+	}
+
 </style>
 
+
+
 </head>
-
 <body>
-	<div class="sidebar">
 
+
+	<script>
+window.addEventListener('load', function() {
+    new FastClick(document.body);
+}, false);
+$(document).ready(function(){
+    $("#show").click(function(){
+        $(".one").animate({left: 0}, 400 );
+        $("#hide").show();
+
+    });
+    $("#hide").click(function(){
+        $(".one").animate({left: '-200px'}, 500 );;
+        $("#hide").hide();
+    });
+});
+
+
+</script>
+
+	<div id="show">Show</div>
+	<div class="one">
+		<ol>
+			<li>me</li>
+			<li>222</li>
+			<li>333</li>
+			<li>444</li>
 	</div>
-
-	<div class="main">
-		<input id="one" name="transforms" type="radio" value="1">
-        <label for="one"></label>
-
-		<input id="two" name="transforms" type="radio" value="2">
-        <label for="two"></label>
-
-        <input id="three" name="transforms" type="radio" value="3">
-        <label for="three"></label>
-
-        <input id="four" name="transforms" type="radio" value="4">
-        <label for="four"></label>
-
-        <input id="five" name="transforms" type="radio" value="5">
-        <label for="five"></label>
-
-        <input id="six" name="transforms" type="radio" value="6">
-        <label for="six"></label>
-
-
-
-
-		<article>
-		    <div><img src="https://s-media-cache-ak0.pinimg.com/474x/9a/e4/10/9ae410af1be44c85c7ab3d0e4a28fb26.jpg" alt="sample1"></div>
-		    <div><img src="https://s-media-cache-ak0.pinimg.com/736x/39/e0/13/39e0133ddab071fe625f2c7c2ac0faa6.jpg" alt="sample2"></div>
-		    <div><img src="https://s-media-cache-ak0.pinimg.com/474x/67/a1/88/67a188bb9d7fddf36562d2a260277703.jpg" alt="sample3"></div>
-		    <div><img src="https://s-media-cache-ak0.pinimg.com/474x/80/1a/11/801a113de5ae20c87bcbcadf9b17a265.jpg" alt="sample4"></div>
-		    <div><img src="https://s-media-cache-ak0.pinimg.com/736x/62/22/96/6222967d060db3dafa653e2a2d76adc8.jpg" alt="sample5" alt="sample5"></div>
-		    <div><img src="https://s-media-cache-ak0.pinimg.com/474x/ee/59/76/ee597653b62687733fb1049155e549e3.jpg" alt="sample6"></div>
-		</article>
-
-	</div>
-	<span class="title">SAMPLE</span>
-
+	<div id="hide">Hide</div>
 </body>
 </html>
