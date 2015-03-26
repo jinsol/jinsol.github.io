@@ -3,9 +3,11 @@
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script type='application/javascript' src='/path/to/fastclick.js'></script>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<title>MUNI</title>
 <style>
 	.one {
-		background-color: red;
+		background-color: #33334c;
 		width: 10%;
 		height: 90%;
 		position: absolute;
@@ -16,16 +18,90 @@
 	#show, #hide  {
 		width: 10%;
 		position: absolute;
-		height: 10%;
+		height: 100%;
 		left: 0;
 		top: 0;
 		cursor: pointer;
+		-webkit-filter: brightness(50%) opacity(60%) grayscale();
 
 	}
+
+	#show:hover, #hide:hover  {
+		-webkit-filter: brightness(100%) opacity() grayscale(0);
+	}
+
 	#hide {
 		display: none;
 	}
 
+	header {
+
+		width: 100%;
+		height: 10%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: white;
+
+	}
+	header h1 {
+		text-align: center;
+		padding-left:5%; 
+		padding-top: -3%; 
+	}
+
+	#show img, #hide img {
+		width: 20%;
+		margin-left: 35%;
+		float: left;
+		margin-top: 18%;
+		display: block;
+	}
+
+
+	ol, ul {
+		list-style: none;
+		margin:0px; padding:0px;
+	}
+
+	li img {
+		width: 20%;
+		margin-left: 36%;
+		padding: 35% 0 35% 0;
+		float: left;
+		display: block;
+
+	}		
+	div {
+		display: inline-block;
+	}
+	#sample {
+		display: none;
+		width: 93%;
+		height: 100%;
+		text-align: center;
+	}
+	#sample li {
+				margin: 20px 0 20px 0;
+				font-family: 'Oswald', sans-serif;
+	}
+	a {
+		text-decoration: none;
+				color: white;
+	}
+	.one li img:hover {
+		-webkit-filter: brightness(80%) opacity() grayscale(0);
+	}
+		#gallery li:hover {
+		-webkit-filter: brightness(80%) opacity() grayscale(0);
+	}
+	.content img{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		
+
+	}
 </style>
 
 
@@ -41,26 +117,58 @@ window.addEventListener('load', function() {
 $(document).ready(function(){
     $("#show").click(function(){
         $(".one").animate({left: 0}, 400 );
+        $("#show img").hide();
         $("#hide").show();
-
+        $("#hide img").show();
     });
     $("#hide").click(function(){
-        $(".one").animate({left: '-200px'}, 500 );;
+        $(".one").animate({left: '-200px'}, 500 );
+        $("#hide img").hide();
         $("#hide").hide();
+        $("#show img").show();
     });
 });
 
-
+  $(function(){
+     $("#gallery").hover(function(){
+   $("#sample",this).slideDown("fast");
+},
+function(){
+  $("#sample",this).slideUp("fast");
+});
+ });
 </script>
+<header>
+	<h1>MUNI</h1>
+	<div id="show">
+		<img src="file://localhost/Users/macbookretina/Google%20%E1%84%83%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3/HTML/icon_png/menubar.png">
+	</div>
+	<div id="hide">
+		<img src="file://localhost/Users/macbookretina/Google%20%E1%84%83%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3/HTML/icon_png/x.png">
+	</div>
+</header>
+<div class="content">
+	<img src="pattern/pattern_1.png" alt="">
+</div>
 
-	<div id="show">Show</div>
+
 	<div class="one">
 		<ol>
-			<li>me</li>
-			<li>222</li>
-			<li>333</li>
-			<li>444</li>
+			<li><a href=#><img src="file://localhost/Users/macbookretina/Google%20%E1%84%83%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3/HTML/icon_png/home.png"></a></li>
+			<li id="gallery">
+				<a href=#><img src="file:///Users/macbookretina/Google%20%E1%84%83%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3/HTML/icon_png/gallery.png"></a>
+				<div id="sample">
+
+					<ul>
+						<li><a href="#">flower</a></li>
+						<li><a href="#">nature</a></li>
+						<li><a href="#">etc</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li><a href=#><img src="file://localhost/Users/macbookretina/Google%20%E1%84%83%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3/HTML/icon_png/unit.png"></a></li>
+			<li><a href=#><img src="file://localhost/Users/macbookretina/Google%20%E1%84%83%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3/HTML/icon_png/pattern.png"></a></li>
 	</div>
-	<div id="hide">Hide</div>
 </body>
 </html>
